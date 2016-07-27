@@ -10,17 +10,16 @@
         <div class="head">
             <div class="title-in">
                 <span>SẢN PHẨM MỚI</span></div>
-            <div data-id="silderProduct" class="control-slider">
+           <%-- <div data-id="silderProduct" class="control-slider">
                 <a href="javascript:void(0);" class="prev"><span class="fa fa-angle-left"></span>
                 </a><a href="javascript:void(0);" class="next"><span class="fa fa-angle-right"></span>
                 </a>
-            </div>
+            </div>--%>
         </div>
         <div class="wrap-prolist">
-            <div id="silderProduct" class="list-pro">
                 <asp:ListView ID="lstProductNews" runat="server" DataSourceID="odsProductNews" EnableModelValidation="True">
                     <ItemTemplate>
-                        <div class="slide">
+                        <div class="item">
                             <div class="product-box">
                                 <div class="product-img">
                                     <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'>
@@ -38,7 +37,9 @@
                         </div>
                     </ItemTemplate>
                     <LayoutTemplate>
-                        <span runat="server" id="itemPlaceholder" />
+                        <div id="silderProduct" class="list-pro owl-carousel">
+                            <span runat="server" id="itemPlaceholder" />
+                        </div>
                     </LayoutTemplate>
                 </asp:ListView>
                 <asp:ObjectDataSource ID="odsProductNews" runat="server" SelectMethod="ProductSelectAll"
@@ -68,7 +69,6 @@
                         <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
                     </SelectParameters>
                 </asp:ObjectDataSource>
-            </div>
         </div>
     </div>
     <div class="bg-title">

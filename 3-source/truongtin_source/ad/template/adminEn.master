@@ -140,6 +140,9 @@
                     <asp:RadMenuItem runat="server" Text="Đối Tác" PostBack="False" Font-Bold="True"
                         NavigateUrl="~/ad/single/partner.aspx">
                     </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Text="Thông tin công ty" PostBack="False" Font-Bold="True"
+                        NavigateUrl="~/ad/single/infocompany.aspx">
+                    </asp:RadMenuItem>
                 </Items>
             </asp:RadMenu>
         </div>

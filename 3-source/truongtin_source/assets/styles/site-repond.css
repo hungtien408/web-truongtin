@@ -320,9 +320,9 @@
 }
 @media (max-width: 479px)
 {
-    .head .title-in {
+    /*.head .title-in {
         width:67%;
-    }
+    }*/
     
     .product-tb, .wrapper-15 {
         margin-left: -8px;

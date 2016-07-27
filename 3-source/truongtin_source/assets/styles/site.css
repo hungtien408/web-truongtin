@@ -973,8 +973,6 @@ body .mobilep-right {
     background: url(../images/bg-head.png) no-repeat left center;
     line-height:40px;
     display: inline-block;
-    width: 100%;
-    margin-bottom: 15px;
     text-transform:uppercase;
 }
     .title-in span {
@@ -1692,6 +1690,64 @@ body .mobilep-right {
 }
 .product-tb {
     margin:20px 0;
+}
+/*======slide=======*/
+.owl-nav {
+    position:absolute;
+    top:-65px;
+    right:0;
+}
+.owl-prev, .owl-next {
+    position:relative;
+    width:100%;
+    display:inline;
+    font-size:0;
+    color:#ebebeb;
+}
+.owl-prev::before{
+    position:absolute;
+    content:"\f104";
+    font-family:FontAwesome;
+    font-size:20px;
+    background-color:#006699;
+    right:30px;
+    top:0;
+    display:block;
+    padding:3px 10px;
+}
+    .owl-next::before {
+    position:absolute;
+    content:"\f105";
+    font-family:FontAwesome;
+    font-size:20px;
+    right:0;
+    top:0;
+    background-color:#006699;
+    display:block;
+    padding:3px 10px;
+    }
+/*===========banner=======*/
+.nivo-prevNav {
+    background-image: url(../images/control-b1.png);
+    height: 32px;
+    width: 20px;
+    font-size:0;
+    background-position: left top;
+    left:15px;
+}
+.nivo-nextNav {
+    background-image: url(../images/control-b1.png);
+    height: 32px;
+    width: 20px;
+    font-size:0;
+    background-position: right top;
+    right:15px;
+}
+.nivo-prevNav:hover {
+    background-position: left bottom;
+}
+.nivo-nextNav:hover {
+    background-position: right bottom;
 }
 /*===============*/
 #sroltop

@@ -29,6 +29,7 @@ function myfunload() {
         //cssdown: "fa fa-caret-down",
         //cssup: "fa fa-caret-up"
     });
+    //$("#myCarousel .item:first-child").addClass("active");
     $(".menu-level li:last-child").addClass("last");
     $(".menu-level .active").find("ul:first").show();
 
@@ -37,16 +38,18 @@ function myfunload() {
         imgcss: "hideo",
         attrname: "data-src"
     });
-    
-    $('.slider-banner').slick({
-        dots: false,
-        arrows: true,
-        fade: true,
+    $('#slider-banner').nivoSlider({
         pauseOnHover: false,
-        autoplay: true,
-        speed: 500,
-        autoplaySpeed: 3000
     });
+    //$('.slider-banner').slick({
+    //    dots: false,
+    //    arrows: true,
+    //    fade: true,
+    //    pauseOnHover: false,
+    //    autoplay: true,
+    //    speed: 500,
+    //    autoplaySpeed: 3000
+    //});
 
     //$('#menu > li').hover(function ()
     //{
@@ -146,36 +149,28 @@ function myfunload() {
 
     if ($('#silderProduct').size() == 1) {
         var silderProduct = $('#silderProduct').imagesLoaded(function () {
-
-            silderProduct.slick({
+            silderProduct.owlCarousel({
+                margin: 10,
+                loop: true,
+                autoplaySpeed: 1000,
+                margin: 10,
+                nav: true,
                 autoplay: true,
-                autoplaySpeed: 3000,
-                //cssEase: 'linear',
-                dots: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                prevArrow: $(".control-slider .prev"),
-                nextArrow: $(".control-slider .next"),
-                responsive: [
-                  {
-                      breakpoint: 639,
-                      settings: {
-                          slidesToShow: 2
-                      }
-                  },
-                  {
-                      breakpoint: 419,
-                      settings: {
-                          slidesToShow: 1
-                      }
-                  }
-                  // You can unslick at a given breakpoint now by adding:
-                  // settings: "unslick"
-                  // instead of a settings object
-                ]
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
             });
+
             silderProduct.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".product-img" }, { cssname: ".product-img" }],
@@ -240,7 +235,7 @@ function myfunload() {
                   // instead of a settings object
                 ]
             });
-            sliderParent.textHeight({
+            silderPartner.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".product-img" }],
                 desbool: false,
