@@ -30,6 +30,8 @@
                             <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'><%# Eval("ProductName") %></a></h4>
                         <div class="product-code">
                             <strong><%# Eval("Tag") %></strong></div>
+                        <div class="product-code">
+                            <strong><%# !string.IsNullOrEmpty(Eval("Price").ToString()) ?(string.Format("{0:##,###.##}", Eval("Price")).Replace('.', '*').Replace(',', '.').Replace('*', ',')) :  "" %><%# string.IsNullOrEmpty(Eval("Price").ToString()) ? "" : " VNĐ"%></strong></div>
                     </div>
                 </div>
             </ItemTemplate>

@@ -99,7 +99,7 @@
                             <asp:ListView ID="ListView1" runat="server" DataSourceID="odsInfoCompany" EnableModelValidation="True">
                                 <ItemTemplate>
                                     Hotline: <span><strong>
-                                        <%# Eval("ArticleTitle")%></strong> (Mr.Sơn)</span>
+                                        <%# Eval("ArticleTitle")%></strong> (Chị Dung)</span>
                                 </ItemTemplate>
                                 <LayoutTemplate>
                                     <span runat="server" id="itemPlaceholder" />
@@ -383,7 +383,9 @@
                                     <div class="copyright">
                                         <p>
                                             &copy; 2016 TRUONG TIN. All rights reserved</p>
-                                        <a href="http://wwww.tranlegroup.com" target="_blank">Thiết kế web Trần Lê</a>
+                                        <%--<a href="http://wwww.tranlegroup.com" target="_blank">Thiết kế web Trần Lê</a>--%>
+                                        <p> Đang online: <%=Application["visitors_online"].ToString()%></p>
+                                        <p>Lượt truy cập: <%=Application["TatCa"].ToString()%></p>
                                     </div>
                                 </div>
                             </div>

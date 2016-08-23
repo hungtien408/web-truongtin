@@ -427,7 +427,7 @@
                             <%# string.Format("{0:##,###.##}", Eval("SavePrice")) %>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="Price" HeaderText="Giá mới" SortExpression="Price" Visible="False">
+                    <asp:GridTemplateColumn DataField="Price" HeaderText="Giá" SortExpression="Price">
                         <ItemTemplate>
                             <%# string.IsNullOrEmpty(Eval("Price").ToString()) ? Eval("OtherPrice") : string.Format("{0:##,###.##}", Eval("Price")) %>
                         </ItemTemplate>
@@ -644,18 +644,18 @@
                                                             </asp:RadNumericTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr class="invisible">
+                                                    <tr>
                                                         <td class="left">
-                                                            Giá mới
+                                                            Giá
                                                         </td>
                                                         <td>
                                                             <div id="pnlprice" class='<%# string.IsNullOrEmpty(Eval("OtherPrice").ToString()) ? "visible" : "invisible" %>'>
                                                                 <asp:RadNumericTextBox ID="txtPrice" runat="server" Width="500px" rel="price" Text='<%# Bind("Price") %>'
-                                                                    EmptyMessage="Giá mới..." Type="Number">
+                                                                    EmptyMessage="Giá..." Type="Number">
                                                                     <NumberFormat AllowRounding="false" />
                                                                 </asp:RadNumericTextBox>
-                                                                <a id="lnkother" onclick="$('input[rel=price]').attr('disabled','disabled').val('');$('#pnlotherprice').show();$('#pnlprice').hide();"
-                                                                    style="cursor: pointer">»Khác</a>
+                                                                <%--<a id="lnkother" onclick="$('input[rel=price]').attr('disabled','disabled').val('');$('#pnlotherprice').show();$('#pnlprice').hide();"
+                                                                    style="cursor: pointer">»Khác</a>--%>
                                                             </div>
                                                             <div id="pnlotherprice" class='<%# string.IsNullOrEmpty(Eval("OtherPrice").ToString()) ? "invisible" : "visible" %>'>
                                                                 <asp:RadTextBox ID="txtOtherPrice" runat="server" rel='otherprice' Width="500px"

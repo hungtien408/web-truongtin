@@ -6,9 +6,9 @@ var rendererOptions = {
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 //Thay dia chi web
-var endAddress = "10.838421,106.621762";
+var endAddress = "10.680956, 106.537593";
 //Thay toa do
-var lat = 10.838421, long = 106.621762;
+var lat = 10.680956, long = 106.537593;
 window.onload = function () {
     //init direction
     directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
@@ -40,8 +40,11 @@ window.onload = function () {
 
         // Creating the content  
         var content = '<div class="box">' +
-            '<h4 class="title-2">SON PHAT THINH</h4>' +
-            '<p><span class="fa fa-map-marker"></span>A1 Quốc Lộ 1A, Khu Phố 7, P.Tân Hưng Thuận, Q.12, TP.HCM</p>' +            '<p><span class="fa fa-phone"></span>(08) 3715 3667 - (08) 3715 3668</p>' +            '<p><span class="fa fa-fax"></span>Fax: 08 3715 3461</p>' +            '<p><span class="fa fa-envelope"></span><a href="mailto:phatthinhhcm@yahoo.com.vn">phatthinhhcm@yahoo.com.vn</a></p>' +
+            '<h4 class="title-2">THÉP TRƯỜNG TÍN</h4>' +
+            '<p><span class="fa fa-map-marker"></span>Ấp 1, Đường số TL830c, Xã Tân Bửu, Huyện Bến Lức, Long An</p>' +
+            '<p><span class="fa fa-phone"></span>(08) 3715 3667 - (08) 3715 3668</p>' +
+            '<p><span class="fa fa-fax"></span>Fax: 08 3715 3461</p>' +
+            '<p><span class="fa fa-envelope"></span><a href="mailto:cskh@truongtin.vn">cskh@truongtin.vn</a></p>' +
         '</div>';
 
         // Setting the content of the InfoWindow

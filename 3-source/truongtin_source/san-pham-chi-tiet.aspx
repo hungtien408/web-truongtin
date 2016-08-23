@@ -145,14 +145,16 @@
                                 <%# Eval("ProductCategoryName") %></li>
                             <li><strong>Mã sản phẩm (ID): </strong>
                                 <%# Eval("Tag") %></li>
+                            <li><strong>Giá: </strong>
+                                <%# !string.IsNullOrEmpty(Eval("Price").ToString()) ?(string.Format("{0:##,###.##}", Eval("Price")).Replace('.', '*').Replace(',', '.').Replace('*', ',')) :  "" %><%# string.IsNullOrEmpty(Eval("Price").ToString()) ? "" : " VNĐ"%></li>
                         </ul>
-                        <p style="font-size: 17px;">
+                        <%--<p style="font-size: 17px;">
                             <strong>Liên hệ trực tiếp để biết thêm thông tin</strong><br />
                             <strong style="color: #006699;">Hotline:</strong> <span style="color: #006699; font-size: 24px;
                                 font-style: italic;">0908 824 208 (Mr.Sơn)</span></p>
                         <p>
                             Hoặc Email: <a style="color: #000; font-style: italic;" href="mailto:cskh@truongtin.vn">
-                                <strong>cskh@truongtin.vn</strong></a></p>
+                                <strong>cskh@truongtin.vn</strong></a></p>--%>
                     </div>
                 </div>
                 <div class="clr">

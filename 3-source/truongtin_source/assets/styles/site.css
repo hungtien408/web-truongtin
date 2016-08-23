@@ -1188,7 +1188,8 @@ body .mobilep-right {
         margin-left: 0;
     }
 .copyright {
-    padding-top:50px;
+    /*padding-top:50px;*/
+    padding-top: 10px;
 }
 .address li {
     padding-left: 30px;
