@@ -427,6 +427,14 @@
                                 </tr>
                                 <tr>
                                     <td class="left">
+                                        Tên công ty
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtTagEn" runat="server" Width="500px" Text='<%# Bind("TagEn") %>'></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
                                         Số điện thoại
                                     </td>
                                     <td>
@@ -509,14 +517,14 @@
                                         <hr />
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <%--<tr class="invisible">
                                     <td class="left">
                                         Tag
                                     </td>
                                     <td>
                                         <asp:TextBox ID="txtTagEn" runat="server" Width="500px" Text='<%# Bind("TagEn") %>'></asp:TextBox>
                                     </td>
-                                </tr>
+                                </tr>--%>
                                 <tr class="invisible">
                                     <td class="left">
                                         Meta Title
@@ -642,7 +650,7 @@
                 </TargetControls>
             </asp:TextBoxSetting>
             <%-- Tiếng Anh--%>
-            <asp:TextBoxSetting EmptyMessage="Tag(En) ...">
+            <asp:TextBoxSetting EmptyMessage="Tên công ty ...">
                 <TargetControls>
                     <asp:TargetInput ControlID="txtTagEn" />
                 </TargetControls>
