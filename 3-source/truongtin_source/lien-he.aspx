@@ -9,10 +9,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="site" class="corner">
-        <div class="container">
             <a id="A1" href="~/" runat="server"><span class="fa fa-home"></span></a>/<span>Liên
                 hệ</span>
-        </div>
     </div>
     <div class="row wrap-contact">
         <div class="col-md-6">

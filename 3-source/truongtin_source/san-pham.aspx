@@ -5,9 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="site" class="corner">
-        <div class="container">
             <a id="A1" href="~/" runat="server"><span class="fa fa-home"></span></a>/<span><asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></span>
-        </div>
     </div>
     <asp:HiddenField ID="hdnSanPham" runat="server" />
     <a class="a-link-sp" href="<%= hdnSanPham.Value %>"></a>

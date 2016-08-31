@@ -2,7 +2,7 @@
 body
 {
     /*font-family: Arial, Helvetica, sans-serif;*/
-    background-color:#fff;
+  background: url(../images/bg-body.png) repeat center center;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
@@ -78,7 +78,6 @@ fieldset, a img, img
     position: relative;
     width: 100%;
     z-index: 10;
-     margin-top: 4px;
         -webkit-transition: all .2s;
         -moz-transition: all .2s;
         -o-transition: all .2s;
@@ -88,13 +87,18 @@ fieldset, a img, img
         position: relative;
         z-index: 10;
     }
+.header-top {
+    background-color:#17469e;
+    position:absolute;
+    width:97.5%;
+}
 #header .logo a {
     display: block;
     margin-top: 8px;
     padding-left: 20px;
     width: 220px;
 }
-.header-bgr {
+/*.header-bgr {
     background: url(../images/line-bg-header.png)repeat-x left center;
     left: 0;
     top: 0;
@@ -103,10 +107,9 @@ fieldset, a img, img
     width:19%;
     z-index: 0;
     margin-top: -4px;
-}
+}*/
     #header .logo {
         background: url(../images/logo-bg.png) no-repeat right bottom;
-        left: 15px;
         top: 0;
         position: absolute;
         height: 117px;
@@ -182,7 +185,7 @@ fieldset, a img, img
 }
 .wrapper-menu {
    float:right;
-  padding-right:10%;
+  padding-right:5%;
 }
 #menu
 {
@@ -825,6 +828,7 @@ body .mobilep-right {
     float:right;
     line-height: 53px;
     margin-left: 20px;
+    margin-right:10px;
     position:relative;
 }
 .form-search-mobi {
@@ -1037,16 +1041,16 @@ body .mobilep-right {
     margin-bottom: 5px;
     width: 100%;
 }
-#site, #site a, #site > .container > span
+#site, #site a, #site span
 {
     color: #a6a6a6;
     font-size: 13px;
     line-height: 22px;
 }
-    #site a, #site > .container > span {
+    #site a, #site span {
         margin: 0 5px;
     }
-#site > .container > span 
+#site  span 
 {
     color: #424242;
     font-weight: 700;
@@ -1087,6 +1091,9 @@ body .mobilep-right {
     padding: 0 5px;
     min-width: 28px;
 }
+    .pager > span {
+        background-color:#fff;
+    }
 .pager a:hover, .pager a.current, .pager span.current
 { 
     background-color: #006699;
@@ -1112,11 +1119,13 @@ body .mobilep-right {
 
 /*============footer==============*/
 #footer {
-    background:#064e87 url(../images/bg-footer.png)no-repeat left center;
     position: relative;
     width: 100%;
     z-index: 1;
-    padding:11px 0;
+}
+.footer-center {
+    padding:11px 15px;
+    background:#064e87 url(../images/bg-footer.png)no-repeat left center;
 }
     #footer, #footer a {
         color: #fff;
@@ -1779,6 +1788,9 @@ body .mobilep-right {
 #sroltop a
 {
     display: block;
+}
+.container {
+    background-color:#fff;
 }
 @media screen and (min-width: 1195px) {
     .container {

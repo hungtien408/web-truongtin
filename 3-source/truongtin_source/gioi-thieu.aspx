@@ -7,9 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="site" class="corner">
-        <div class="container">
             <a href="~/" runat="server"><span class="fa fa-home"></span></a>/<span>Giới Thiệu</span>
-        </div>
     </div>
     <asp:ListView ID="lstAboutUs" runat="server" DataSourceID="odsAboutUs" EnableModelValidation="True">
         <ItemTemplate>

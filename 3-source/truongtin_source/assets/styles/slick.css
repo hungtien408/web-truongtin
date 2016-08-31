@@ -131,11 +131,11 @@
 }
 #silderPartner.slick-slider .slick-prev {
     background-position: left top;
-    left: 0;
+    left: 10px;
 }
 #silderPartner.slick-slider .slick-next {
     background-position: right top;
-    right: 0;
+    right: 10px;
 }
 #silderPartner.slick-slider .slick-prev:hover {
     background-position: left bottom;

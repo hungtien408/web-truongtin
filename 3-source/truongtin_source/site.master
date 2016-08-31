@@ -73,9 +73,10 @@
         <div id="wrapper-in">
             <!--header-->
             <div id="header">
-                <div class="header-bgr desktop-showhide">
-                </div>
-                <div class="container header-top">
+               <%-- <div class="header-bgr desktop-showhide">
+                </div>--%>
+                <div class="container">
+                    <div class="header-top">
                     <div class="logo">
                         <a href="~/" runat="server">
                             <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a></div>
@@ -187,36 +188,39 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
             <!--end header-->
             <hr />
-            <div id="banner">
-                <div id="slider-banner" class="nivoSlider">
-                    <asp:ListView ID="lstBanner" runat="server" DataSourceID="odsBanner" EnableModelValidation="True">
-                        <ItemTemplate>
-                            <img alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/banner-img-1.jpg" %>'
-                                runat="server" />
-                        </ItemTemplate>
-                        <LayoutTemplate>
-                            <span runat="server" id="itemPlaceholder" />
-                        </LayoutTemplate>
-                    </asp:ListView>
-                    <asp:ObjectDataSource ID="odsBanner" runat="server" SelectMethod="AdsBannerSelectAll"
-                        TypeName="TLLib.AdsBanner">
-                        <SelectParameters>
-                            <asp:Parameter Name="StartRowIndex" Type="String" />
-                            <asp:Parameter Name="EndRowIndex" Type="String" />
-                            <asp:Parameter DefaultValue="5" Name="AdsCategoryID" Type="String" />
-                            <asp:Parameter Name="CompanyName" Type="String" />
-                            <asp:Parameter Name="Website" Type="String" />
-                            <asp:Parameter Name="FromDate" Type="String" />
-                            <asp:Parameter Name="ToDate" Type="String" />
-                            <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
-                            <asp:Parameter Name="Priority" Type="String" />
-                            <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
-                        </SelectParameters>
-                    </asp:ObjectDataSource>
+            <div class="container">
+                <div id="banner">
+                    <div id="slider-banner" class="nivoSlider">
+                        <asp:ListView ID="lstBanner" runat="server" DataSourceID="odsBanner" EnableModelValidation="True">
+                            <ItemTemplate>
+                                <img alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/banner-img-1.jpg" %>'
+                                    runat="server" />
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <span runat="server" id="itemPlaceholder" />
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsBanner" runat="server" SelectMethod="AdsBannerSelectAll"
+                            TypeName="TLLib.AdsBanner">
+                            <SelectParameters>
+                                <asp:Parameter Name="StartRowIndex" Type="String" />
+                                <asp:Parameter Name="EndRowIndex" Type="String" />
+                                <asp:Parameter DefaultValue="5" Name="AdsCategoryID" Type="String" />
+                                <asp:Parameter Name="CompanyName" Type="String" />
+                                <asp:Parameter Name="Website" Type="String" />
+                                <asp:Parameter Name="FromDate" Type="String" />
+                                <asp:Parameter Name="ToDate" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                                <asp:Parameter Name="Priority" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
+                    </div>
                 </div>
             </div>
             <!--main-->
@@ -293,8 +297,8 @@
             </div>
             <!--end main-->
             <hr />
-            <div id="partner-bg">
-                <div class="container">
+            <div class="container">
+                <div id="partner-bg">
                     <div id="silderPartner" class="slider">
                         <asp:ListView ID="lstParner" runat="server" DataSourceID="odsParner" EnableModelValidation="True">
                             <ItemTemplate>
@@ -325,6 +329,7 @@
                     </div>
                 </div>
             </div>
+        
             <!--footer-->
             <div id="footer">
                 <div class="container">
@@ -424,6 +429,7 @@
             </div>
         </div>
     </div>
+        
     <!--menumobile-->
     <div id="sroltop">
         <a class="corner" href="javascript:void(0);"><span class="glyphicon glyphicon-chevron-up">
