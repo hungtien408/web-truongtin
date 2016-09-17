@@ -412,6 +412,7 @@ fieldset, a img, img
     font-size: 11px;
     text-transform: uppercase;
     line-height: 87px;
+    margin-right:10px;
 }
     .menu-mo span {
         display: block;

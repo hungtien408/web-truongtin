@@ -266,7 +266,23 @@
         padding:0 15px;
         font-size:12px;
     }
-      
+       .header-top {
+      display: inline-block;
+      position: static;
+      width: 100%;
+    }
+    #header {
+      background: #17469e none repeat scroll 0 0;
+      margin-bottom:3px;
+      display: inline-block;
+      width: 100%;
+    }
+        #header .container {
+            background:none;
+        }
+    .header-top .hotline {
+        line-height:30px;
+    }
 }
 @media (max-width: 570px) {
   
@@ -361,6 +377,7 @@
     .footer-menu a {
         margin: 0 3px;
     }
+   
 }
 @media (max-width: 440px)
 {
