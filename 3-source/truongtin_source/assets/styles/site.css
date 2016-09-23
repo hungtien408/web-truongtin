@@ -208,7 +208,7 @@ fieldset, a img, img
     color: #fff;
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 33px;
     padding: 0 20px;
     text-transform: uppercase;
@@ -1125,7 +1125,8 @@ body .mobilep-right {
     z-index: 1;
 }
 .footer-center {
-    padding:11px 15px;
+    /*padding:11px 15px;*/
+    padding: 5px 15px;
     background:#064e87 url(../images/bg-footer.png)no-repeat left center;
 }
     #footer, #footer a {
@@ -1273,7 +1274,8 @@ body .mobilep-right {
 }
 #partner-bg {
     background-color:#ededed;
-    padding:15px 0;
+    /*padding: 15px 0;*/
+    padding: 3px 0;
 }
 .slider {
     padding:0 20px;
@@ -1326,6 +1328,7 @@ body .mobilep-right {
     .menu-list li a {
         color: #565656;
         display: block;
+        font-weight: 600;
         font-size: 15px;
         line-height: 24px;
         padding: 12px 30px;
