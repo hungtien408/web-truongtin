@@ -269,7 +269,8 @@ public partial class ad_single_product : System.Web.UI.Page
                 if (!string.IsNullOrEmpty(ImageName))
                 {
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
-                    ResizeCropImage.ResizeByCondition(strFullPath, 213, 198);
+                    //ResizeCropImage.ResizeByCondition(strFullPath, 213, 198);
+                    ResizeCropImage.ResizeByCondition(strFullPath, 230, 250);
                     ResizeCropImage.CreateThumbNailByCondition("~/res/product/", "~/res/product/thumbs/", ImageName, 120, 120);
                 }
 
@@ -317,7 +318,7 @@ public partial class ad_single_product : System.Web.UI.Page
                     string strFullPath = "~/res/product/" + ImageName;
 
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
-                    ResizeCropImage.ResizeByCondition(strFullPath, 213, 198);
+                    ResizeCropImage.ResizeByCondition(strFullPath, 230, 250);
                     ResizeCropImage.CreateThumbNailByCondition("~/res/product/", "~/res/product/thumbs/", ImageName, 120, 120);
                 }
             }
