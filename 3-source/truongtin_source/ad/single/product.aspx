@@ -559,7 +559,7 @@
                                                             <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"
                                                                 ClientValidationFunction="validateRadUpload" Display="Dynamic"></asp:CustomValidator>
                                                             <%--<span class="required">(Kích thước 213px x 198px)</span>--%>
-                                                            <span class="required">(Kích thước 230px x 250px)</span>
+                                                            <span class="required">(Kích thước 240px x 320px)</span>
                                                             <%--<asp:RadAsyncUpload ID="FileImageName" runat="server"
                                                                 TargetFolder="~/res/product/album/" TemporaryFolder="~/res/TempAsync" Width="100%"
                                                                 AllowedFileExtensions="jpg,jpeg,gif,png" Localization-Select="Chọn" Localization-Cancel="Hủy"
